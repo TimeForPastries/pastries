@@ -1,14 +1,27 @@
 .banner{
     padding: 0.1px;
     text-align: left;
-    background: #c0c0c0;
+    background: #596de0;
     color: rgb(0, 0, 0);
     font-size: 20px;
   }
 
+
+.overlay img{
+
+  width: 10%;
+    height:10%;
+    opacity: 100%;
+    position: relative;
+    left: 1000px;
+    bottom: 1033px;
+}
+
+
 .nav-links{
     flex:1 ;
     text-align: right;
+    
 }
 .nav-links ul li{
     list-style: none;
@@ -29,7 +42,7 @@ hr {
   .footer{
     padding: 0.01px;
     text-align: center;
-    background: #c0c0c0;
+    background: #df4b4b;
     color: rgb(0, 0, 0);
     font-size: 20px;
 
@@ -48,4 +61,23 @@ hr {
     width: 10%;
     height: 10%;
   }
-  
+.skull img{
+  width: 7%;
+    height: 7%;
+    
+    position: relative;
+    left: 1350px;
+    bottom: 950px;
+    opacity: 20%;
+}
+  .agora{ 
+   font-size: larger;
+
+  }
+  .contactimage img{
+    width: 10%;
+    height: 10%;
+    left: 1350px;
+    position: relative;
+    left: 1000px;
+  }
