@@ -1,21 +1,12 @@
 .banner{
     padding: 0.1px;
     text-align: left;
-    background: #596de0;
+    background: #c5ceff;
     color: rgb(0, 0, 0);
     font-size: 20px;
+   border: rgb(179, 255, 0) 10px ridge;
   }
 
-
-.overlay img{
-
-  width: 10%;
-    height:10%;
-    opacity: 100%;
-    position: relative;
-    left: 1000px;
-    bottom: 1033px;
-}
 
 
 .nav-links{
@@ -47,7 +38,33 @@ hr {
     font-size: 20px;
 
   }
+  .gif1{
+    color: rgb(9, 172, 96);
+    border: rebeccapurple 7px ridge;
+    background-image: url("images/ao.gif");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    
+
+
+  }
 .gif1 img{
+    width: 10%;
+    height: 10%;
+
+  }
+  .gif2{
+border: green 7px ridge;
+background-image: url("images/KillMario2.gif");
+
+
+  }
+  .gif2 img{
+   width: 10%;
+    
+    
+      }
+  .TFP img{
     width: 10%;
     height: 10%;
 
@@ -84,10 +101,7 @@ hr {
     position: relative;
     left: 1000px;
   }
-.mrvoid img{
- 
-    
-}
+
 .gangson{ 
   display: flex;
   
@@ -106,3 +120,70 @@ hr {
 width: 200%;
 }
 
+.TFP{
+  color: antiquewhite;
+border: #da9311 7px groove ;
+background-image: url("images/background1.png");
+background-size: 5% 25%;
+
+}
+
+
+.headtfp img{ 
+ width: 25%;
+  }
+  
+.tierlist img{
+ border:grey 20px groove;
+    display: block;
+    margin: auto;
+    width: 50%;
+  }
+
+.highlights{
+
+  border: lightsalmon 7px groove;
+	background-image: url("images/background3.png");
+  background-size: 10% 10%;
+  
+  
+
+padding: 10px;
+}
+.version{
+flex: 1;
+text-align: right;
+}
+
+.inline-block { 
+	display: inline-block; 
+ 
+} 
+.inline-block2 { 
+	display: inline-block; 
+ 
+} 
+
+.gif1 {
+  text-align: center;
+
+}
+
+.TFP {
+  text-align: center;
+  
+}
+
+.gif2 {
+  text-align: center;
+
+}
+.highlights2{
+
+ 
+}
+
+.H1{
+  text-align: center;
+  
+}
