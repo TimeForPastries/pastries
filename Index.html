@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+  <head>
+    
+    <style>
+      
+     body {
+      
+      background-color: bisque;
+      background-image: url("images/background.gif");
+      
+  background-size: 5% 5%;
+      font-family: "Roboto", sans-serif;
+      font-weight: 400;
+      font-style: normal;
+      
+      
+    }
+    
+  </style>
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <title>Pastries</title>
+
+    <link rel="stylesheet" href="style.css" href="style.css" />
+
+  </head>
+  
+  <link rel="shortcut icon" type="image/x-icon" href="Rufgu.ico" />
+  <body>
+
+   
+    <video id="bg-video" autoplay muted playsinline style="display: none;">
+      <source src="audio/postnutmixtape(reflectandrejoice).mp4" type="video/mp4">
+      Your browser does not support the video tag.
+    </video>
+  
+    <script>
+      const video = document.getElementById('bg-video');
+  
+      function fadeInAudio() {
+        if (!video.muted || video.fadingIn) return;
+  
+        video.fadingIn = true;
+        video.muted = false;
+        video.volume = 0;
+  
+        const fadeDuration = 2000; // 2 seconds
+        const steps = 20;
+        const stepTime = fadeDuration / steps;
+        let step = 0;
+  
+        const interval = setInterval(() => {
+          step++;
+          video.volume = Math.min(step / steps, 1);
+          if (step >= steps) clearInterval(interval);
+        }, stepTime);
+      }
+  
+      function setupFadeTrigger() {
+        window.addEventListener('scroll', fadeInAudio, { once: true });
+        window.addEventListener('click', fadeInAudio, { once: true });
+      }
+  
+      // Wait until the video is ready to play before attaching listeners
+      video.addEventListener('canplay', () => {
+        setupFadeTrigger();
+      });
+    </script>
+    <div class="mugshot">
+    <marquee behaviour="alternate" scrollamount="35">
+           
+      <img src="images/mugshot.png">
+   
+      
+    </marquee>
+  </div>
+  
+  
+    <section class="header">
+    
+    
+    <div class="banner">
+       <div class="headtfp">
+        <img src="images/TFP BANNER.png">
+        
+       </div>
+       <nav>
+      
+        <div class="nav-links">
+        <ul>
+          <p>V1.1</p>
+          <li><a href="info.html" target="_blank">info</a></li>
+          
+  
+        </ul>
+  
+      </nav>
+      
+   
+  
+  
+
+       <div class='inline-block'>
+        <a href="https://sunkud.neocities.org/"><img alt="sunkud" src="https://sunkud.neocities.org/88s/kud 88x31.png"></a>
+        </div> 
+<div class='inline-block'>
+  <a href="https://store.steampowered.com/app/1490060/Disillusion/"><img src="https://forum.agoraroad.com/images/agoratravelbutton/disillusion.gif" width="88" height="31"></a>
+</div> 
+<div class='inline-block'> 
+  <div id:pastries405>
+    <a href="https://timeforpastries.neocities.org/"><img alt="pastries" src="https://timeforpastries.neocities.org/images/button.png"></a>
+  </div>
+
+  
+</div>
+
+  
+ 
+   
+    
+  
+  
+  </section>
+  <div class="TFP">
+    <hr>
+    <h2>Top dawg</h2>
+    <p>sub to my youtube channel <a href="https://www.youtube.com/channel/UCY7fcywJiZPo-b9SCapyvtA"> TimeForPastries</a></p>
+    
+    
+  
+    
+    <img src="Trolling.gif">
+  </div>
+
+  <article>
+<center1>
+    <div class="gif1">
+     
+      <h2>Steam</h2>
+      <p>steam page of awesome:<a href="https://steamcommunity.com/profiles/76561199056751909/"> steem</a></p>
+      <img src="images/cspro.gif">
+    </div>
+  </center1>
+  
+   
+  
+  </article>
+
+  <div class="gif2">
+   
+    <h2>Epic hackerman</h2>
+    <p>Troll menu <a href="https://pastebin.com/dBGz1ynG#"> pastebin</a></p>
+    <img src="images/biggie.png">
+  </div>
+
+	<script src="index.js"></script>
+
+</article>
+
+  
+</footer>
+<div class="skull">
+
+  <img src="images/skull.png">
+
+</div>
+</div>
+<div class="tierlist">
+  <img src="images/TierList1.png">
+
+</div>
+
+
+
+<div class="H1">
+<h2>Gallery</h2>
+</div>
+<div class="highlights">
+  <div class="highlights2">
+    
+    <div class="highlights2">
+
+
+<div class="DSCD">
+  <img src="images/DSCD.png"
+  img width="50%, 50%">
+  <img src="images/mrvoid.gif"  img width="20%, 20%"> 
+  <img src="images/gamestation.png" img width="30%, 30%"> 
+  <img src="images/DSWIIT.png" img width="25%, 25%">
+  <img src="images/DSDS.png" img width="20%, 20%">
+  <img src="images/rip.png" img width="20%, 20%">
+  <img src="images/pastebinban.png" img width="30%, 30%"> 
+  <img src="images/minecrafthouse.png" img width="30%, 30%"> 
+  <img src="images/coolbynature.png" img width="30%, 30%"> 
+
+  
+</div>
+
+
+
+</div>
+</div>
+</div>
+
+
+<div class="mugshot2">
+  
+    <marquee behaviour="alternate" scrollamount="35" direction="right">       
+    <img src="images/mugshot.png">
+ 
+    </marquee>
+  </marquee>
+
+  </body>
+
+ 
+</html>
