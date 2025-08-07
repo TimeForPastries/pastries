@@ -35,24 +35,44 @@
   <link rel="shortcut icon" type="image/x-icon" href="Rufgu.ico" />
   <body>
 
-    <audio id="bg-music" src="audio/postnutmixtape(reflectandrejoice).mp3" loop muted autoplay></audio>
-
+   
+    <video id="bg-video" autoplay muted playsinline style="display: none;">
+      <source src="audio/postnutmixtape(reflectandrejoice).mp4" type="video/mp4">
+      Your browser does not support the video tag.
+    </video>
+  
     <script>
-      const audio = document.getElementById("bg-music");
-    
-      const unmuteAudio = () => {
-        audio.muted = false;
-        audio.volume = 0.5;
-    
-        // Remove both event listeners so it only runs once
-        document.removeEventListener("click", unmuteAudio);
-        window.removeEventListener("scroll", unmuteAudio);
-      };
-    
-      document.addEventListener("click", unmuteAudio);
-      window.addEventListener("scroll", unmuteAudio);
+      const video = document.getElementById('bg-video');
+  
+      function fadeInAudio() {
+        if (!video.muted || video.fadingIn) return;
+  
+        video.fadingIn = true;
+        video.muted = false;
+        video.volume = 0;
+  
+        const fadeDuration = 2000; // 2 seconds
+        const steps = 20;
+        const stepTime = fadeDuration / steps;
+        let step = 0;
+  
+        const interval = setInterval(() => {
+          step++;
+          video.volume = Math.min(step / steps, 1);
+          if (step >= steps) clearInterval(interval);
+        }, stepTime);
+      }
+  
+      function setupFadeTrigger() {
+        window.addEventListener('scroll', fadeInAudio, { once: true });
+        window.addEventListener('click', fadeInAudio, { once: true });
+      }
+  
+      // Wait until the video is ready to play before attaching listeners
+      video.addEventListener('canplay', () => {
+        setupFadeTrigger();
+      });
     </script>
-
     <div class="mugshot">
     <marquee behaviour="alternate" scrollamount="35">
            
