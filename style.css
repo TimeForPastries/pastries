@@ -1,4 +1,8 @@
+
+
 .banner{
+  z-index: 0;
+  position: relative;
     padding: 0.1px;
     text-align: left;
     background: #c5ceff;
@@ -56,7 +60,7 @@ hr {
   .gif2{
 border: green 7px ridge;
 background-image: url("images/KillMario2.gif");
-
+color:aqua
 
   }
   .gif2 img{
@@ -95,11 +99,11 @@ background-image: url("images/KillMario2.gif");
 
   }
   .contactimage img{
-    width: 10%;
-    height: 10%;
-    left: 1350px;
     position: relative;
-    left: 1000px;
+    width: 10%;
+    height: 10%;    
+    left: 1200px;
+    bottom:200px
   }
 
 .gangson{ 
@@ -141,7 +145,8 @@ background-size: 5% 25%;
   }
 
 .highlights{
-
+z-index: 0;
+position: relative;
   border: lightsalmon 7px groove;
 	background-image: url("images/background3.png");
   background-size: 10% 10%;
@@ -185,5 +190,28 @@ text-align: right;
 
 .H1{
   text-align: center;
+  color: blueviolet;
+}
+.mugshot{
+
+  z-index: 1;
+  position: relative;
+  top: 420px;
   
+  opacity: 90%;
+  margin-bottom: -330px;
+}
+marquee{
+  position: relative;
+  
+
+
+}
+.mugshot2{
+  z-index: 1;
+  position: relative;
+  bottom: 1500px;
+  
+  opacity: 90%;
+  margin-top: -330px;
 }
