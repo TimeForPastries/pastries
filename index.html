@@ -3,7 +3,9 @@
 <html lang="en">
 
   <head>
+    
     <style>
+      
      body {
       
       background-color: bisque;
@@ -13,6 +15,7 @@
       font-family: "Roboto", sans-serif;
       font-weight: 400;
       font-style: normal;
+      
       
     }
     
@@ -31,18 +34,50 @@
   
   <link rel="shortcut icon" type="image/x-icon" href="Rufgu.ico" />
   <body>
+
+    <audio id="bg-music" src="audio/postnutmixtape(reflectandrejoice).mp3" loop muted autoplay></audio>
+
+    <script>
+      const audio = document.getElementById("bg-music");
+    
+      const unmuteAudio = () => {
+        audio.muted = false;
+        audio.volume = 0.5;
+    
+        // Remove both event listeners so it only runs once
+        document.removeEventListener("click", unmuteAudio);
+        window.removeEventListener("scroll", unmuteAudio);
+      };
+    
+      document.addEventListener("click", unmuteAudio);
+      window.addEventListener("scroll", unmuteAudio);
+    </script>
+
+    <div class="mugshot">
+    <marquee behaviour="alternate" scrollamount="35">
+           
+      <img src="images/mugshot.png">
+   
+      
+    </marquee>
+  </div>
+  
+  
     <section class="header">
+    
     
     <div class="banner">
        <div class="headtfp">
         <img src="images/TFP BANNER.png">
+        
        </div>
        <nav>
       
         <div class="nav-links">
         <ul>
-          <p>V1.0</p>
-          <li><a href="info.html">info</a></li>
+          <p>V1.1</p>
+          <li><a href="info.html" target="_blank">info</a></li>
+          
   
         </ul>
   
@@ -90,7 +125,7 @@
      
       <h2>Steam</h2>
       <p>steam page of awesome:<a href="https://steamcommunity.com/profiles/76561199056751909/"> steem</a></p>
-      <img src="images/pages.png">
+      <img src="images/cspro.gif">
     </div>
   </center1>
   
@@ -122,30 +157,48 @@
 
 </div>
 
+
+
 <div class="H1">
-<h2>Highlights</h2>
+<h2>Gallery</h2>
 </div>
 <div class="highlights">
   <div class="highlights2">
-    <img src="images/based.png"> <img src="images/based2.png"> 
+    
     <div class="highlights2">
 
 
 <div class="DSCD">
   <img src="images/DSCD.png"
   img width="50%, 50%">
-  <img src="images/mrvoid.gif"  img width="25%, 25%"> <img src="images/DSWIIT.png" img width="25%, 25%"> <img src="images/DSDS.png" img width="20%, 20%">
+  <img src="images/mrvoid.gif"  img width="20%, 20%"> 
+  <img src="images/gamestation.png" img width="30%, 30%"> 
+  <img src="images/DSWIIT.png" img width="25%, 25%">
+  <img src="images/DSDS.png" img width="20%, 20%">
+  <img src="images/rip.png" img width="20%, 20%">
+  <img src="images/pastebinban.png" img width="30%, 30%"> 
+  <img src="images/minecrafthouse.png" img width="30%, 30%"> 
+  <img src="images/coolbynature.png" img width="30%, 30%"> 
+
   
 </div>
 
 
 
 </div>
+</div>
+</div>
 
 
-
+<div class="mugshot2">
+  
+    <marquee behaviour="alternate" scrollamount="35" direction="right">       
+    <img src="images/mugshot.png">
+ 
+    </marquee>
+  </marquee>
 
   </body>
-  
+
  
 </html>
